@@ -127,6 +127,49 @@
     color: yellow;
     font-size: 50px;
 }
+
+.title_proyects_show{
+    width: 210px;
+    margin-bottom: 1rem;
+}
+.contenedor_proyects{
+    margin: 0 auto; /* Centra horizontalmente */
+    width: 80%;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.title_proyects{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /*Permite especificar el tamaño del espacio entre filas y/o columnas de los elementos hijos de ese contenedor sin necesidad de aplicar márgenes manuales a cada uno de los elementos. */
+    margin-top: 2rem;
+}
+.projects_unit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    background-color: #001b2e;
+    width: 280px;
+    padding: 25px;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+}
+.description_project{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+
 .cont{
     margin-top: 5%;
     margin-left: 5%;
@@ -205,6 +248,7 @@
     border-radius: 30%;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
+
 .contacto{
     padding: 10px;
 }
@@ -222,6 +266,11 @@
     transform: scale(1.2); /* Agranda la imagen al pasar el mouse */
     opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
 }
+.link_project .img_project{
+    display: flex;
+    width: 180px; /*tamaño de imagen */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
 .gmail{
     color: white;   
 }
@@ -232,6 +281,11 @@
     transform: scale(1.2); /* Agranda la imagen al pasar el mouse */
     opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
 }
+.link_project:hover .img_project {
+    transform: scale(1.2); /* Agranda la imagen al pasar el mouse */
+    opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
+}
+
 /* Formato de barras de progreso */
 progress {
     display: flex;
